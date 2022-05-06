@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    background-color: rgb(207, 201, 201);
+    position: absolute;
+    width: 185px;
+    height: 125vh;
+    font-family: 'Kalam', cursive;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 22px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 25px;
+    padding: 25px 0px;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+    /* background-color: yellow; */
+    width: 90vw;
+}
+
+.container {
+    display: flex;
+}
+
+.infocontainer {
+    /* background-color: aqua; */
+    height: 50vh;
+    width: 80vw;
+    margin: 145px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devinfo {
+    display: flex;
+    font-size: 20px;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'IM Fell DW Pica SC', serif;
+}
+
+.hello {
+    font-size: 3em;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.about {
+    font-size: 1.25em;
+}
+
+.moreabout {
+    font-size: 20px;
+    margin-top: 25px;
+    font-family: 'Kalam', cursive;
+}
+
+.buttons {
+    margin-top: 34px;
+}
+
+.btn {
+    padding: 9px 15px;
+    margin: 0px 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: dodgerblue;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.btn-sm {
+    font-size: 12px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: dodgerblue;
+}
+
+.devpic img {
+    height: 50vh;
+}
+
+
+/* Styling for Contact.html */
+
+.contactform {
+    padding: 0 15px;
+    padding-top: 25px;
+    font-family: 'IM Fell DW Pica SC', serif;
+    margin: 0 260px;
+}
+
+.contactform h1 {
+    font-family: 'Kalam', cursive;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.contactform form div {
+    padding: 15px 0;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    padding: 15px 0;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    /* width: 16vw; */
+    border-radius: 5px;
+    font-size: 12px;
+    margin: 6px 0;
+    padding: 3px 0;
+}
+
+#emailHelp {
+    font-family: 'Kalam', cursive;
+    margin: -10px 15px;
+    font-size: 12px;
+    color: rgb(60, 52, 65);
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 2vw;
+}
+
+/* Styling for blog.html  */
+
+.blogcontainer{
+    margin: 80px 190px;
+}
+
+.blogItem {
+    margin: 20px;
+    font-family: 'Kalam', cursive;
+}
+
+h1 {
+    font-family: 'IM Fell DW Pica SC', serif;
+}
+
+p {
+    font-family: 'Kalam', cursive;
+}
+
+/* Styling for intro,html  */
+
+.intro{
+    margin: 80px;
+}
+
+.intro h2 {
+    font-family: 'IM Fell DW Pica SC', serif;
+    margin: 12px;
+}
+
+.intro p {
+    margin: 12px;
+}
+
+.SkillContainer {
+    padding: 12px;
+}
+
+.SkillItem {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+}
+
+.Skill {
+    width: 205px;
+    height: 5px;
+    background-color: red;
+    border: 2px solid black;
+    margin: 0 5px
+}
+
+.hundred {
+    width: 250px;
+    background-color: green;
+}
+
+.fifty {
+    width: 125px;
+    background-color: yellow;
+}
+
+.t5 {
+    width: 62.5px;
+    background-color: red;
+}
+
+.sidebarGo {
+    transform: translate(-280px, 0px);
+    position: absolute;
+}
+
+/* Styling for Hamburger and Cross  */
+.hamburger {
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+
+.ham{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.cross {
+    margin-left: 137px;
+    margin-top: 6px;
+}
+
+/* Media Query */
+@media (max-width: 1240px) { 
+    * {
+        /* background-color: red; */
+    }
+
+    .devpic{
+        display: none;
+    }
+
+    .devinfo{
+        font-size: 20px;
+    }
+
+    .intro, .blogcontainer, .contactform{
+        margin: 70px 10px;
+    }
+
+    /* .sidebar{
+        transform: translate(-280px, 0px);
+        position: absolute; */
+}
